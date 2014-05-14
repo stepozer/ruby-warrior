@@ -1,10 +1,10 @@
 class Player
 	def play_turn(warrior)
 		space = warrior.feel
-		if (warrior.health < 10 and space.empty?)
+		if ((warrior.health < 20 and warrior.health != 8 and space.empty?) or warrior.health == 5)
 			warrior.rest!
 			return nil
-		end
+		end     
 		if (space.empty?)
 			warrior.walk!
 		end
