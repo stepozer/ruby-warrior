@@ -18,7 +18,6 @@ class Player
 			end
 			return nil;
 		end
-
 			
 		if (space.empty?)
 			warrior.walk! @direction
